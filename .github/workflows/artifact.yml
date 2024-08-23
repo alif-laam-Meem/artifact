@@ -12,7 +12,7 @@ jobs:
       - name: Check out the code
         uses: actions/checkout@v3
       - name: Upload the artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: .  #path is directory within our repository that we want zip into this artifact. (to zip up repo that get checkput use (.)
